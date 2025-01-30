@@ -6,11 +6,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
 .product-image{
   max-width: 400px;
   width: 100%;
+}
+.rating span{
+  color: rgb(229, 229, 34);
+}
+.img.large{
+  max-width: 100%;
+}
+.img.large{
+  max-width: 100%;
 }
 
