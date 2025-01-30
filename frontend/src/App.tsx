@@ -1,11 +1,18 @@
 
 
+import { useContext, useEffect } from 'react'
 import { Container, Navbar,Nav} from 'react-bootstrap'
 import { Outlet } from 'react-router-dom'
+import { Store } from './Store'
 
 function App() {
+ //use state:{mode} to get mode from state 
+  const {state:{mode},dispatch}= useContext(Store)
 
-
+  useEffect(()=> {
+    document.body.setAttribute('data-bs-theme',mode)
+  },[mode])//dependency array have mode when there is change in mode change theme
+  
   return (
    <div className='d-flex flex-column vh-100'>
     <header>

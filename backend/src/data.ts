@@ -20,7 +20,7 @@ export const sampleProduct: Product[] =[
     category : 'shirts',
     brand : 'Nike',
     price : 120,
-    countInStock : 10,
+    countInStock : 0,
     description : 'high quality shirt',
     rating : 4.5,
     numReviews : 10
